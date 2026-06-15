@@ -22,3 +22,8 @@ key/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Local captures / temporary config dumps
+window.xml
+github-remote-wrapper.json
+valid-remote-config.txt

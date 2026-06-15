@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/miOption"
+        android:icon="@drawable/ic_cog"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/miTheme"
+        android:icon="@drawable/ic_sun"
+        android:title="Dark Mode"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/miClearLogs"
+        android:icon="@drawable/ic_delete_logs"
+        android:title="Clear Logs"
+        android:visible="false"
+        app:showAsAction="always">
+    </item>
+    
+    <item
+        android:id="@+id/miUpdate"
+		android:title="Config Update">
+        
+    </item>
+    <item
+        android:id="@+id/offline"
+		android:title="Import .json Config">
+        
+    </item>
+	
+</menu>

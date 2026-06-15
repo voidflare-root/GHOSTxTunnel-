@@ -1,0 +1,130 @@
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:key="screenMain">
+
+	
+	<androidx.preference.PreferenceCategory android:iconSpaceReserved="true"
+		android:title="ADVANCED SETTINGS">
+
+		<androidx.preference.CheckBoxPreference
+			android:key="userorhwid"
+			android:summary="@string/summary_account_mode"
+			android:title="@string/title_account_mode" />
+
+		<https.socks.android.view.SummaryEditTextPreference
+			android:dependency="userorhwid"
+			android:key="userlogin"
+			android:title="@string/auth_username"
+			android:summary="@string/summary_username"
+			android:dialogMessage=""
+			android:singleLine="true"
+			/>
+
+		<https.socks.android.view.SummaryEditTextPreference
+			android:dependency="userorhwid"
+			android:key="passwlogin"
+			android:title="@string/password"
+			android:summary="@string/summary_password"
+			android:dialogMessage=""
+			android:singleLine="true"
+			/>
+
+
+		<androidx.preference.CheckBoxPreference
+			android:key="data_compression"
+			android:title="@string/title_data_compression"
+			android:summary="@string/summary_data_compression"
+			android:defaultValue="true"/>
+		
+		
+		<androidx.preference.CheckBoxPreference
+			android:key="udpForward"
+			android:summary="@string/summary_forward_udp"
+			android:title="@string/title_forward_udp" />
+
+		<https.socks.android.view.SummaryEditTextPreference
+            android:key="udpResolver"
+            android:title="@string/title_resolver_udp"
+            android:summary="@string/summary_resolver_udp"
+            android:dialogMessage=""
+			android:singleLine="true"
+			/>
+
+	</androidx.preference.PreferenceCategory>
+	
+	
+	<androidx.preference.PreferenceCategory
+		android:title="@string/category_forward_dns">
+		
+		<androidx.preference.CheckBoxPreference
+			android:key="dnsForward"
+			android:summary="@string/summary_forward_dns"
+			android:title="@string/title_forward_dns" />
+		
+		<https.socks.android.view.SummaryEditTextPreference
+            android:key="dnsResolver1"
+            android:title="@string/title_dns_primary"
+            android:summary="@string/summary_dns_primary"
+            android:dialogMessage="@string/dialog_message_dns_primary"
+			android:singleLine="true"
+			/>
+
+		<https.socks.android.view.SummaryEditTextPreference
+			android:key="dnsResolver2"
+			android:title="@string/title_dns_secondary"
+			android:summary="@string/summary_dns_secondary"
+			android:dialogMessage="@string/dialog_message_dns_primary"
+			android:singleLine="true"
+			/>
+		
+	</androidx.preference.PreferenceCategory>
+	
+	
+	<androidx.preference.PreferenceCategory
+		android:title="@string/category_settings_adicionais">
+		
+		<https.socks.android.view.SummaryEditTextPreference
+            android:key="pingerSSH"
+            android:title="@string/title_ping_time"
+			android:maxLength="3"
+            android:summary="@string/no_value"
+			android:singleLine="true"
+			/>
+
+		<androidx.preference.CheckBoxPreference
+			android:key="httpPing"
+			android:summary="@string/summary_http_ping"
+			android:title="@string/title_http_ping"
+		/>
+		
+		<androidx.preference.CheckBoxPreference
+			android:key="autoClearLogs"
+			android:summary="@string/summary_auto_clear_log"
+			android:title="@string/title_auto_clear_log"
+		/>
+
+		<androidx.preference.CheckBoxPreference
+			android:key="hideLog"
+			android:summary="@string/summary_hide_log"
+			android:title="@string/title_hide_log"
+		/>
+		
+	</androidx.preference.PreferenceCategory>
+	
+	
+	<androidx.preference.PreferenceCategory
+		android:title="@string/category_user_interface">
+	
+		<androidx.preference.ListPreference
+        	android:key="idioma"
+			android:defaultValue="default"
+        	android:entries="@array/pref_idioma_option_labels"
+        	android:entryValues="@array/pref_idioma_option_values"
+        	android:title="@string/title_language"
+		/>
+		
+	</androidx.preference.PreferenceCategory>
+	
+	
+</androidx.preference.PreferenceScreen>

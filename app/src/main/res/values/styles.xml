@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<style name="AppThemeLogin" parent="Theme.Material3.DayNight.NoActionBar">
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="alertDialogTheme">@style/AppAlertDialogLogin</item>
+
+		<item name="android:textColor">@color/colorText</item>
+		<item name="android:textColorHint">@color/colorText</item>
+
+		<item name="buttonTint">@color/colorText</item>
+	</style>
+
+	<!-- Alert Dialog -->
+    <style name="AppAlertDialogLogin"
+        parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:textColor">@color/colorText</item>
+		<item name="android:textColorHint">@color/colorText</item>
+		<item name="buttonTint">@color/colorText</item>
+		<item name="android:background">@color/colorSecondaryBackground</item>
+	</style>
+	
+	<!-- Style geral do app -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorSecondary</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="preferenceTheme">@style/AppPreference</item>
+		<item name="android:fontFamily">@font/googlesans</item>
+		<item name="alertDialogTheme">@style/Neth</item>
+        <item name="colorButtonNormal">?colorPrimary</item>
+		<item name="colorControlHighlight">@color/colorAccent</item>
+		<item name="buttonTint">@color/colorAccent</item>
+		<item name="android:navigationBarColor">@color/appBackground</item>
+		<item name="android:statusBarColor">@color/colorPrimary</item>
+		<item name="android:forceDarkAllowed">true</item>
+	</style>
+	
+	<!-- Alert Dialog -->
+    <style name="AppAlertDialog"
+        parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="buttonTint">@color/colorAccent</item>
+		<item name="android:fontFamily">@font/googlesans</item>
+	</style>
+	
+
+    <!-- Preference Theme -->
+    <style name="AppPreference"
+        parent="PreferenceThemeOverlay">
+		<item name="android:fontFamily">@font/googlesans</item>
+    </style>
+	
+    <style name="TabTitleTheme" parent="@style/TextAppearance.Design.Tab">
+	<item name="android:letterSpacing">0.1</item>
+		<item name="android:fontFamily">@font/googlesans</item>
+	</style>
+	
+	<style name="Neth" parent="@style/AppAlertDialog">
+        <item name="android:windowBackground">@drawable/nth</item>
+    </style>
+	<!-- Toolbar theme -->
+	<style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+		<!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+		<item name="android:textColorPrimary">@color/white</item>
+		<!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+		<item name="actionMenuTextColor">@android:color/holo_green_light</item>
+		<!-- Tints the input fields like checkboxes and text fields -->
+		<item name="colorAccent">@color/gray</item>
+		<item name="android:fontFamily">@font/googlesans</item>
+		<item name="colorControlNormal">@color/white</item>
+		<!-- Applies to views in their activated state (i.e checked or switches) -->
+		<item name="colorControlActivated">@color/blue_light</item>
+		<!-- Applied to framework control highlights (i.e ripples or list selectors) -->
+		<item name="colorControlHighlight">@color/gray_light</item>
+
+		<!-- Enable these below if you want clicking icons to trigger a ripple effect -->
+		<!-- 
+		<item name="selectableItemBackground">?android:selectableItemBackground</item>
+		<item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item> 
+		-->
+	</style>
+	
+
+	<style name="ToolbarTitleTheme" 
+        parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:fontFamily">@font/googlesans</item>
+    </style>
+
+    <style name="ToolbarSubtitleTheme"
+        parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+		<item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+		<item name="android:fontFamily">@font/googlesans</item>
+    </style>
+	
+    
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    
+	<style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:fontFamily">@font/googlesans</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:letterSpacing">0</item>
+	</style>
+	
+	
+
+	<style name="Toolbar.SubTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:textColor">#ffffffff</item>
+		<item name="android:textSize">13sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:fontFamily">@font/googlesans</item>
+	</style>
+	
+	
+	<style name="edit"><item name="android:textAppearance">?android:textAppearanceMedium</item><item name="android:layout_width">fill_parent</item><item name="android:layout_height">wrap_content</item><item name="android:singleLine">true</item><item name="android:inputType">textNoSuggestions</item></style>
+	<!-- Style for Splash Screen -->
+    <style name="SplashScreenTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/splash</item>
+		<item name="colorPrimaryDark">@color/splash</item>
+		<item name="colorAccent">@color/splash</item>
+		<item name="android:navigationBarColor">@color/splash</item>
+		<item name="android:statusBarColor">@color/splash</item>
+        <item name="android:windowBackground">@color/splash</item>
+		<item name="android:fontFamily">@font/googlesans</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+	</style>	
+	
+</resources>

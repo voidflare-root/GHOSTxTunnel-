@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+		android:background="@color/appBackground"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_main"
+                android:theme="@style/ToolbarTheme"
+                android:background="?attr/colorPrimary"
+				android:typeface="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:titleTextAppearance="@style/ToolbarTitleTheme"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+              
+			</androidx.appcompat.widget.Toolbar>
+			
+        	<com.google.android.material.tabs.TabLayout
+				android:layout_height="wrap_content"
+				android:background="@color/appSurface"
+				android:layout_width="match_parent"
+				app:tabIndicatorColor="@color/colorPrimaryDark"
+				app:tabGravity="fill"
+                app:tabIndicatorHeight="3.0dip"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="?colorPrimary"
+                app:tabTextColor="@color/appTextSecondary"
+                app:tabTextAppearance="@style/TabTitleTheme"
+				android:id="@+id/tablayout"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/viewpager">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/tab1">
+
+                <include
+                    layout="@layout/activity_home"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/tab2">
+
+                <include
+                    layout="@layout/activity_logs"/>
+
+            </LinearLayout>
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+	<com.google.android.material.navigation.NavigationView
+		android:layout_height="match_parent"
+		android:layout_width="fill_parent"
+		android:background="@color/appSurface"
+		app:itemIconTint="@color/colorPrimary"
+		app:itemTextColor="@color/appTextPrimary"
+		app:menu="@menu/navigation_menu"
+		app:headerLayout="@layout/nav_header"
+		android:layout_gravity="start"
+		android:id="@+id/navigation">
+		
+	
+	</com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+

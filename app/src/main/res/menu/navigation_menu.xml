@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <group>
+        <item
+            android:id="@+id/miReleaseNotes"
+            android:icon="@drawable/ic_book"
+            android:title="Release Notes"/>
+
+        <item
+            android:id="@+id/miUpdateResources"
+            android:icon="@drawable/ic_cloud_download"
+            android:title="Update Resources"/>
+
+        <item
+            android:id="@+id/miTethering"
+            android:icon="@drawable/ic_wifi_tethering_black_24dp"
+            android:title="Tethering (Hotshare)"/>
+
+        <item
+            android:id="@+id/miHostChecker"
+            android:icon="@drawable/ic_hunt"
+            android:title="Host Checker"/>
+
+        <item
+            android:id="@+id/miSubdomainFinder"
+            android:icon="@drawable/ic_file"
+            android:title="Subdomain Finder"/>
+
+     	<item
+			android:id="@+id/radio"
+			android:icon="@drawable/ic_wifi_tethering_black_24dp"
+			android:title="Radio Information"/>
+    </group>
+
+    <group>
+        <item android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"/>
+
+        <item android:id="@+id/fb"
+            android:icon="@drawable/ic_facebook"
+            android:title="Telegram Channel"/>
+
+        <item android:id="@+id/feedback"
+            android:icon="@drawable/ic_bug_report_black_24dp"
+            android:title="Report Bug"/>
+
+        <item android:id="@+id/miAbout"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="About"/>
+    </group>
+</menu>

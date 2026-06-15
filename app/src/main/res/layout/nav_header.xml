@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:layout_height="196.0dip"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:padding="12.0dip"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    
+    <ImageView
+        android:id="@+id/nav_header_circleimageview_id"
+        android:layout_height="60.0dip"
+        android:layout_marginLeft="15dp"
+        android:layout_width="60.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ghost_logo_circle"/>
+    
+    <TextView
+        android:id="@+id/nav_header_name_id"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:paddingTop="8.0dip"
+        android:text="@string/app_name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="14.0sp"/>
+    
+    <TextView
+        android:id="@+id/nav_headerAppVersion"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="8.0dip"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="14.0sp"
+        android:visibility="gone"/>
+    
+    <!-- Yahan change kiya hai -->
+    <TextView
+        android:id="@+id/nav_header_emailaddress_id"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip"
+        android:text="ᯓ★ 𝙳𝚎𝚟 𝙱𝚢 ➢ Ꭾɪ𝚈ᴜꢺʜ ᥫ᭡፝•𝅃꯭᳚🌸!!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="12.0sp"/> 
+    <!-- Note: Maine textSize ko 8dip se 12sp kiya hai taaki naam saaf dikhe -->
+
+</LinearLayout>

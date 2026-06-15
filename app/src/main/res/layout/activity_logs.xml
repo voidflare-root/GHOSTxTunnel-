@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@color/appBackground"
+	android:padding="5dp">
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:background="@color/appBackground"
+			android:orientation="vertical"
+            android:gravity="top"
+			android:paddingBottom="10dp">
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerLog"
+				android:background="@color/appBackground"
+				android:gravity="start|top"
+				android:layout_width="fill_parent"
+				android:layout_height="match_parent"
+				android:layout_alignParentLeft="true"/>
+		</LinearLayout>
+</LinearLayout>

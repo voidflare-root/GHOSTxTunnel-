@@ -1,0 +1,59 @@
+plugins {
+ id 'com.android.application'
+}
+android {
+    namespace 'com.nphdevs.bluespace'
+    compileSdk 33
+    buildFeatures {
+        buildConfig true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias 'mykey'
+            keyPassword 'renzy'
+            storeFile file('../key/NethPogi.keystore')
+            storePassword 'renzy'
+            v1SigningEnabled true
+            v2SigningEnabled true
+            enableV3Signing true
+        }
+    }
+    defaultConfig {
+	    applicationId "com.ghostxroot.vpn"
+		minSdkVersion 21
+        //noinspection OldTargetApi
+        targetSdk 33
+        versionCode 10
+        versionName "1.0"
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+	implementation 'androidx.preference:preference:1.2.0'
+	implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.github.netfreemx:genmxutils:1.0.2'
+    implementation 'org.conscrypt:conscrypt-android:2.5.2'
+
+}
