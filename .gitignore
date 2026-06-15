@@ -12,6 +12,7 @@ local.properties
 # Generated APK/AAB outputs
 *.apk
 *.aab
+dist/
 
 # Signing keys and local secrets
 key/
